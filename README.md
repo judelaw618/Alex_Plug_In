@@ -2,7 +2,7 @@
 
 ![Alex Cognitive Architecture Banner](https://raw.githubusercontent.com/fabioc-aloha/Alex_Plug_In/main/assets/banner.png)
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/fabioc-aloha/Alex_Plug_In)
+[![Version](https://img.shields.io/badge/version-1.1.1-blue.svg)](https://github.com/fabioc-aloha/Alex_Plug_In)
 [![License](https://img.shields.io/badge/license-SEE%20LICENSE-green.svg)](LICENSE.md)
 [![VS Code](https://img.shields.io/badge/VS%20Code-Extension-purple.svg)](https://code.visualstudio.com/)
 [![Marketplace](https://img.shields.io/badge/VS%20Code-Marketplace-007ACC.svg)](https://marketplace.visualstudio.com/items?itemName=fabioc-aloha.alex-cognitive-architecture)
@@ -119,7 +119,13 @@ Alex includes automated neural maintenance through the VS Code extension:
 
 Built on 270+ academic sources spanning 150+ years of cognitive science, neuroscience, and AI safety research.
 
-## 🆕 What's New in v1.1.0
+## 🆕 What's New in v1.1.1
+
+- **Publisher Update**: Corrected marketplace publisher to `fabioc-aloha`
+- **Improved Categorization**: Now listed under AI, Machine Learning, and Education
+- **Documentation Updates**: All marketplace links and references updated
+
+### Previous Release (v1.1.0)
 
 - **VS Code Extension Integration**: Dream protocol now runs directly from Command Palette
 - **Automatic Synapse Repair**: Intelligent detection and repair of broken connections
