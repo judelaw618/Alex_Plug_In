@@ -72,16 +72,16 @@ The extension manages the following structure in your workspace:
 ```
 .github/
   copilot-instructions.md    # Main cognitive framework
-  instructions/              # Procedural memory (8+ files)
-  prompts/                   # Episodic memory (11+ files)
-domain-knowledge/            # Specialized expertise (12+ files)
+  instructions/              # Procedural memory (10 files)
+  prompts/                   # Episodic memory (11 files)
+domain-knowledge/            # Specialized expertise (12 files)
 config/                      # Architecture configuration
 archive/                     # Dream protocol reports
 ```
 
 ## 🧬 Network Status
 
-- **Synaptic Connections**: 164 validated pathways
+- **Synaptic Connections**: 154 validated pathways
 - **Broken Connections**: 0
 - **Network Health**: EXCELLENT
 - **Automation**: VS Code extension-based (TypeScript)

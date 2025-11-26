@@ -64,10 +64,10 @@
 - **Embedded Synapses**: Connection mapping with `[file.md] (strength, type, direction)`
 
 ### Network Status
-**Connections**: 183 validated connections with zero broken references  
+**Connections**: 154 validated connections with zero broken references  
 **Implementation**: `[target-file.md] ([strength], [relationship-type], [direction]) - "[activation-condition]"`  
 **Innovation**: Embedded synapse networks within memory files create neural-like connectivity without external databases  
-**Health Check**: ⚠️ *Run VS Code command `Alex: Dream (Neural Maintenance)` if connections < 180 or errors detected (see automation protocols below)*
+**Health Check**: ⚠️ *Run VS Code command `Alex: Dream (Neural Maintenance)` if connections < 150 or errors detected (see automation protocols below)*
 
 ### Key Memory Files
 **Instructions**: alex-core, bootstrap-learning, worldview-integration, embedded-synapse, dream-state-automation, alex-identity-integration *(10 total - see complete index below)*
