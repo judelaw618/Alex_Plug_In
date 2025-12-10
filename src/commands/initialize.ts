@@ -5,7 +5,9 @@ import * as path from 'path';
 export async function initializeArchitecture(context: vscode.ExtensionContext) {
     const workspaceFolders = vscode.workspace.workspaceFolders;
     if (!workspaceFolders) {
-        vscode.window.showErrorMessage('Please open a workspace folder to initialize Alex.');
+        vscode.window.showErrorMessage(
+            'No workspace folder open. Please open a project folder first (File → Open Folder), then run this command again.'
+        );
         return;
     }
 
@@ -14,12 +16,15 @@ export async function initializeArchitecture(context: vscode.ExtensionContext) {
 
     if (await fs.pathExists(markerFile)) {
         const result = await vscode.window.showWarningMessage(
-            'Alex Cognitive Architecture is already initialized in this workspace.',
+            'Alex is already installed in this workspace.\n\n• To update to a new version, use "Alex: Upgrade"\n• To completely reinstall, choose Reset below',
+            'Upgrade Instead',
             'Reset Architecture',
             'Cancel'
         );
 
-        if (result === 'Reset Architecture') {
+        if (result === 'Upgrade Instead') {
+            await vscode.commands.executeCommand('alex.upgrade');
+        } else if (result === 'Reset Architecture') {
             await resetArchitecture(context);
         }
         return;
@@ -37,13 +42,18 @@ export async function resetArchitecture(context: vscode.ExtensionContext) {
     const rootPath = workspaceFolders[0].uri.fsPath;
 
     const confirm = await vscode.window.showWarningMessage(
-        'Are you sure you want to reset the Alex Cognitive Architecture? This will DELETE existing memory files and re-initialize them.',
+        '⚠️ RESET will permanently delete all Alex memory files!\n\nThis includes:\n• All learned domain knowledge\n• Custom instructions and prompts\n• Synaptic network connections\n\nConsider using "Alex: Upgrade" instead to preserve your knowledge.',
         { modal: true },
-        'Yes, Reset',
+        'Yes, Delete Everything',
+        'Upgrade Instead',
         'Cancel'
     );
 
-    if (confirm !== 'Yes, Reset') {
+    if (confirm === 'Upgrade Instead') {
+        await vscode.commands.executeCommand('alex.upgrade');
+        return;
+    }
+    if (confirm !== 'Yes, Delete Everything') {
         return;
     }
 
@@ -101,8 +111,21 @@ async function performInitialization(context: vscode.ExtensionContext, rootPath:
             }
         });
 
-        vscode.window.showInformationMessage('Alex Cognitive Architecture initialized successfully!');
+        const result = await vscode.window.showInformationMessage(
+            '✅ Alex Cognitive Architecture initialized!\n\nNext steps:\n1. Open any file and start chatting with your AI assistant\n2. Run "Alex: Dream" periodically to maintain neural health\n3. Ask Alex to learn new domains as needed',
+            'Open Main Brain File',
+            'Run Dream Protocol',
+            'Close'
+        );
+        
+        if (result === 'Open Main Brain File') {
+            const brainFile = path.join(rootPath, '.github', 'copilot-instructions.md');
+            const doc = await vscode.workspace.openTextDocument(brainFile);
+            await vscode.window.showTextDocument(doc);
+        } else if (result === 'Run Dream Protocol') {
+            await vscode.commands.executeCommand('alex.dream');
+        }
     } catch (error: any) {
-        vscode.window.showErrorMessage(`Failed to initialize Alex: ${error.message}`);
+        vscode.window.showErrorMessage(`Failed to initialize Alex: ${error.message}\n\nTry closing VS Code, deleting the .github folder, and running initialize again.`);
     }
 }

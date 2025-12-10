@@ -41,7 +41,9 @@ const consolidatedMappings: { [key: string]: string } = {
 export async function runDreamProtocol(context: vscode.ExtensionContext) {
     const workspaceFolders = vscode.workspace.workspaceFolders;
     if (!workspaceFolders) {
-        vscode.window.showErrorMessage('Please open a workspace folder to run Dream Protocol.');
+        vscode.window.showErrorMessage(
+            'No workspace folder open. Please open a project with Alex installed (File → Open Folder), then run Dream Protocol.'
+        );
         return;
     }
     const rootPath = workspaceFolders[0].uri.fsPath;
@@ -72,7 +74,14 @@ export async function runDreamProtocol(context: vscode.ExtensionContext) {
         allFiles = [...new Set(allFiles)];
 
         if (allFiles.length === 0) {
-            vscode.window.showWarningMessage("No memory files found. Did you initialize Alex?");
+            const result = await vscode.window.showWarningMessage(
+                'No Alex memory files found in this workspace.\n\nWould you like to initialize Alex Cognitive Architecture now?',
+                'Initialize Alex',
+                'Cancel'
+            );
+            if (result === 'Initialize Alex') {
+                await vscode.commands.executeCommand('alex.initialize');
+            }
             return;
         }
 
@@ -198,9 +207,32 @@ export async function runDreamProtocol(context: vscode.ExtensionContext) {
 
         // 5. Show result
         if (brokenSynapses.length > 0) {
-            vscode.window.showWarningMessage(`Dream Protocol complete. Found ${brokenSynapses.length} broken synapses. See report in archive.`);
+            const result = await vscode.window.showWarningMessage(
+                `⚠️ Dream Protocol found ${brokenSynapses.length} broken synapse${brokenSynapses.length > 1 ? 's' : ''}!\n\n` +
+                `${repairedSynapses.length > 0 ? `✅ Auto-repaired: ${repairedSynapses.length}\n` : ''}` +
+                `❌ Need manual repair: ${brokenSynapses.length}\n\n` +
+                'Review the report for details on broken connections.',
+                'View Report',
+                'Close'
+            );
+            if (result !== 'View Report') {
+                return;
+            }
         } else {
-            vscode.window.showInformationMessage(`Dream Protocol complete. Neural network healthy (${synapses.length} synapses).`);
+            const healthStatus = synapses.length > 50 ? 'excellent' : synapses.length > 20 ? 'good' : 'developing';
+            const result = await vscode.window.showInformationMessage(
+                `✅ Neural network is healthy!\n\n` +
+                `📊 Statistics:\n` +
+                `• ${allFiles.length} memory files\n` +
+                `• ${synapses.length} active synapses\n` +
+                `${repairedSynapses.length > 0 ? `• ${repairedSynapses.length} auto-repaired\n` : ''}` +
+                `• Network health: ${healthStatus}`,
+                'View Full Report',
+                'Close'
+            );
+            if (result !== 'View Full Report') {
+                return;
+            }
         }
         
         const doc = await vscode.workspace.openTextDocument(reportPath);

@@ -165,7 +165,9 @@ async function findUserCreatedFiles(rootPath: string, manifest: Manifest | null)
 export async function upgradeArchitecture(context: vscode.ExtensionContext) {
     const workspaceFolders = vscode.workspace.workspaceFolders;
     if (!workspaceFolders) {
-        vscode.window.showErrorMessage('Please open a workspace folder to upgrade Alex.');
+        vscode.window.showErrorMessage(
+            'No workspace folder open. Please open a project with Alex installed (File → Open Folder), then run Upgrade.'
+        );
         return;
     }
 
@@ -176,12 +178,13 @@ export async function upgradeArchitecture(context: vscode.ExtensionContext) {
     // Check if Alex is installed
     if (!await fs.pathExists(markerFile)) {
         const result = await vscode.window.showWarningMessage(
-            'Alex Cognitive Architecture is not installed in this workspace.',
-            'Initialize Now',
+            'Alex is not installed in this workspace yet.\n\n' +
+            'To use Alex, you need to initialize it first. This will set up the cognitive architecture files.',
+            'Initialize Alex Now',
             'Cancel'
         );
 
-        if (result === 'Initialize Now') {
+        if (result === 'Initialize Alex Now') {
             await vscode.commands.executeCommand('alex.initialize');
         }
         return;
@@ -192,20 +195,47 @@ export async function upgradeArchitecture(context: vscode.ExtensionContext) {
     const extensionVersion = await getExtensionVersion(extensionPath);
 
     if (installedVersion === extensionVersion) {
-        vscode.window.showInformationMessage(
-            `Alex Cognitive Architecture is already at version ${extensionVersion}. No upgrade needed.`
+        const result = await vscode.window.showInformationMessage(
+            `✅ Alex is already at the latest version (${extensionVersion}).\n\n` +
+            'No upgrade needed. Your cognitive architecture is up to date!',
+            'Run Dream Protocol',
+            'Close'
         );
+        if (result === 'Run Dream Protocol') {
+            await vscode.commands.executeCommand('alex.dream');
+        }
         return;
     }
 
     // Confirm upgrade
     const confirm = await vscode.window.showInformationMessage(
-        `Upgrade Alex from v${installedVersion || 'unknown'} to v${extensionVersion}?\n\nThis is a hybrid upgrade process:\n1. Phase 1 (automated): Backup & system files\n2. Phase 2 (AI-assisted): Schema migration\n\nYour learned knowledge will be preserved.`,
+        `🔄 Upgrade Available: v${installedVersion || 'unknown'} → v${extensionVersion}\n\n` +
+        'This is a safe, hybrid upgrade process:\n\n' +
+        '📦 Phase 1 (Automated):\n' +
+        '• Full backup of all files\n' +
+        '• Update system files\n' +
+        '• Detect what needs migration\n\n' +
+        '🤖 Phase 2 (AI-Assisted):\n' +
+        '• Your AI assistant completes the upgrade\n' +
+        '• Preserves all your learned knowledge\n' +
+        '• Migrates any schema changes\n\n' +
+        '⏱️ Total time: ~2-5 minutes',
         { modal: true },
         'Start Upgrade',
+        'What\'s New?',
         'Cancel'
     );
 
+    if (confirm === 'What\'s New?') {
+        // Open changelog or show version notes
+        const changelogPath = path.join(extensionPath, 'CHANGELOG.md');
+        if (await fs.pathExists(changelogPath)) {
+            const doc = await vscode.workspace.openTextDocument(changelogPath);
+            await vscode.window.showTextDocument(doc);
+        }
+        return;
+    }
+    
     if (confirm !== 'Start Upgrade') {
         return;
     }
@@ -467,13 +497,21 @@ async function performUpgrade(
         });
 
         // Show completion message with instructions
+        const taskWord = report.migrationTasks.length === 1 ? 'task' : 'tasks';
         const result = await vscode.window.showWarningMessage(
-            `Phase 1 Complete! ${report.migrationTasks.length} tasks require AI assistance.\n\nPlease read UPGRADE-INSTRUCTIONS.md and ask your AI assistant to complete the upgrade.`,
-            'Open Instructions',
+            `✅ Phase 1 Complete!\n\n` +
+            `📊 Summary:\n` +
+            `• Backup created: ${report.backed_up.length} folders\n` +
+            `• Files updated: ${report.updated.length}\n` +
+            `• Files added: ${report.added.length}\n` +
+            `• Files preserved: ${report.preserved.length}\n` +
+            `• Migration ${taskWord}: ${report.migrationTasks.length}\n\n` +
+            `🤖 Next Step: Open the instructions file and copy the prompt to your AI assistant (GitHub Copilot, Claude, etc.) to complete Phase 2.`,
+            'Open Instructions (Recommended)',
             'View Full Report'
         );
 
-        if (result === 'Open Instructions') {
+        if (result === 'Open Instructions (Recommended)') {
             const instructionsPath = path.join(rootPath, 'UPGRADE-INSTRUCTIONS.md');
             const doc = await vscode.workspace.openTextDocument(instructionsPath);
             await vscode.window.showTextDocument(doc);
@@ -484,7 +522,13 @@ async function performUpgrade(
         }
 
     } catch (error: any) {
-        vscode.window.showErrorMessage(`Failed to upgrade Alex: ${error.message}`);
+        vscode.window.showErrorMessage(
+            `❌ Upgrade failed: ${error.message}\n\n` +
+            'Your original files should be intact. If you see issues:\n' +
+            '1. Check the archive/upgrades folder for backups\n' +
+            '2. Try running "Alex: Dream" to assess damage\n' +
+            '3. You can restore from backup if needed'
+        );
         report.errors.push(error.message);
     }
 }
