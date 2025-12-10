@@ -123,12 +123,24 @@ Built on 270+ academic sources spanning 150+ years of cognitive science, neurosc
 
 ## 🆕 What's New in v1.5.0 UNPENTNILIUM
 
+- **Hybrid Upgrade Protocol**: New `Alex: Upgrade Architecture` command with intelligent two-phase upgrade
+  - Phase 1 (Automated): Full backup, system file updates, migration detection
+  - Phase 2 (AI-Assisted): Schema migrations completed by your AI assistant preserving learned knowledge
+- **Version Compatibility Detection**: Alex now proactively detects outdated memory files and recommends upgrades
+- **Robust Error Handling**: Operation locks, atomic writes, permission checks, and graceful degradation
+- **Enhanced User Guidance**: All popups now include clear next steps and recovery instructions
 - **KISS/DRY Architecture Optimization**: Comprehensive code review and simplification
 - **SYNAPSE-SCHEMA.md**: New single source of truth for synapse notation format
 - **Standardized Headers**: All 20+ memory files now use consistent `## Synapses` format
 - **Simplified Activation Patterns**: Verbose patterns reduced to concise trigger → action format
-- **Archive System**: Outdated meditation sessions moved to `archive/meditation-sessions/`
-- **Schema Compliance**: All relationship types now conform to documented standards
+
+### Upgrade from Previous Versions
+
+If you have an existing Alex installation, run **`Alex: Upgrade Architecture`** from the Command Palette. This will:
+1. Create a complete backup of your current files
+2. Update system files while preserving your customizations
+3. Detect any schema migrations needed
+4. Generate instructions for your AI assistant to complete the upgrade
 
 ### Previous Release (v1.1.1)
 
