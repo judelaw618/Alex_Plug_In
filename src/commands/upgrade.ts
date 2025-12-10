@@ -580,7 +580,7 @@ If anything goes wrong:
 ## Need Help?
 
 - Full upgrade report: \`archive/upgrades/upgrade-report-${timestamp}.md\`
-- Upgrade protocol docs: \`UPGRADE-PROTOCOL.md\`
+- Upgrade protocol docs: \`UPGRADE-INSTRUCTIONS.md\`
 - Backup location: \`${path.relative(rootPath, backupDir)}\`
 
 ---
