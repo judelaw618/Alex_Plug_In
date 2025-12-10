@@ -250,6 +250,16 @@ async function performUpgrade(
     oldVersion: string | null,
     newVersion: string
 ) {
+    // Validate extension has required files before starting
+    const requiredSource = path.join(extensionPath, '.github', 'copilot-instructions.md');
+    if (!await fs.pathExists(requiredSource)) {
+        vscode.window.showErrorMessage(
+            'Extension installation appears corrupted - missing core files.\n\n' +
+            'Please reinstall the Alex Cognitive Architecture extension from the VS Code Marketplace.'
+        );
+        return;
+    }
+
     const report: UpgradeReport = {
         updated: [],
         added: [],
@@ -271,7 +281,17 @@ async function performUpgrade(
 
             // Step 1: Create full backup
             progress.report({ message: "Creating complete backup...", increment: 15 });
-            await fs.ensureDir(backupDir);
+            
+            // Validate we can write to archive directory
+            try {
+                await fs.ensureDir(backupDir);
+                // Test write permissions
+                const testFile = path.join(backupDir, '.write-test');
+                await fs.writeFile(testFile, 'test');
+                await fs.remove(testFile);
+            } catch (writeError: any) {
+                throw new Error(`Cannot create backup directory - check disk space and permissions: ${writeError.message}`);
+            }
             
             // Backup .github folder
             const githubSrc = path.join(rootPath, '.github');
@@ -485,11 +505,16 @@ async function performUpgrade(
                 }
             }
 
-            // Step 8: Update manifest
+            // Step 8: Update manifest (with atomic write)
             progress.report({ message: "Saving manifest...", increment: 5 });
             manifest.version = newVersion;
             manifest.upgradedAt = new Date().toISOString();
-            await saveManifest(rootPath, manifest);
+            
+            // Atomic write: write to temp file first, then rename
+            const manifestPath = path.join(rootPath, '.alex-manifest.json');
+            const tempManifestPath = manifestPath + '.tmp';
+            await fs.writeJson(tempManifestPath, manifest, { spaces: 2 });
+            await fs.move(tempManifestPath, manifestPath, { overwrite: true });
 
             // Step 9: Generate upgrade tasks and instructions
             progress.report({ message: "Generating upgrade instructions...", increment: 5 });

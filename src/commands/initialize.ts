@@ -62,7 +62,8 @@ export async function resetArchitecture(context: vscode.ExtensionContext) {
         path.join(rootPath, '.github', 'copilot-instructions.md'),
         path.join(rootPath, '.github', 'instructions'),
         path.join(rootPath, '.github', 'prompts'),
-        path.join(rootPath, 'domain-knowledge')
+        path.join(rootPath, 'domain-knowledge'),
+        path.join(rootPath, '.alex-manifest.json')  // Clean up manifest too
     ];
 
     try {
@@ -86,6 +87,16 @@ export async function resetArchitecture(context: vscode.ExtensionContext) {
 async function performInitialization(context: vscode.ExtensionContext, rootPath: string, overwrite: boolean) {
     const extensionPath = context.extensionPath;
 
+    // Validate extension has required files
+    const requiredSource = path.join(extensionPath, '.github', 'copilot-instructions.md');
+    if (!await fs.pathExists(requiredSource)) {
+        vscode.window.showErrorMessage(
+            'Extension installation appears corrupted - missing core files.\n\n' +
+            'Please reinstall the Alex Cognitive Architecture extension from the VS Code Marketplace.'
+        );
+        return;
+    }
+
     // Define source and destination paths
     const sources = [
         { src: path.join(extensionPath, '.github', 'copilot-instructions.md'), dest: path.join(rootPath, '.github', 'copilot-instructions.md') },
@@ -95,6 +106,17 @@ async function performInitialization(context: vscode.ExtensionContext, rootPath:
     ];
 
     try {
+        // Test write permissions first
+        const testDir = path.join(rootPath, '.github');
+        await fs.ensureDir(testDir);
+        const testFile = path.join(testDir, '.write-test');
+        try {
+            await fs.writeFile(testFile, 'test');
+            await fs.remove(testFile);
+        } catch (permError: any) {
+            throw new Error(`Cannot write to workspace - check folder permissions: ${permError.message}`);
+        }
+
         await vscode.window.withProgress({
             location: vscode.ProgressLocation.Notification,
             title: "Initializing Alex Cognitive Architecture...",

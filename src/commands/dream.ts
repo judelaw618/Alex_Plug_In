@@ -85,7 +85,7 @@ export async function runDreamProtocol(context: vscode.ExtensionContext) {
             return;
         }
 
-        // 2. Parse Synapses
+        // 2. Parse Synapses (skip code blocks to avoid false positives)
         const synapses: Synapse[] = [];
         const fileSet = new Set(allFiles.map(f => path.normalize(f).toLowerCase()));
         const synapseRegex = /\[([^\]]+\.md)\]\s*\(([^,)]+)(?:,\s*([^,)]+))?(?:,\s*([^)]+))?\)\s*-\s*"([^"]*)"/g;
@@ -94,8 +94,19 @@ export async function runDreamProtocol(context: vscode.ExtensionContext) {
             const content = await fs.readFile(file, 'utf-8');
             const lines = content.split('\n');
             
+            let inCodeBlock = false;
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i];
+                
+                // Track code block state to skip false positives
+                if (line.trim().startsWith('```')) {
+                    inCodeBlock = !inCodeBlock;
+                    continue;
+                }
+                if (inCodeBlock) {
+                    continue;
+                }
+                
                 let match;
                 while ((match = synapseRegex.exec(line)) !== null) {
                     const targetName = match[1].trim();
