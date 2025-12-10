@@ -2,7 +2,7 @@
 
 ![Alex Cognitive Architecture Banner](https://raw.githubusercontent.com/fabioc-aloha/Alex_Plug_In/main/assets/banner.png)
 
-[![Version](https://img.shields.io/badge/version-1.1.1-blue.svg)](https://github.com/fabioc-aloha/Alex_Plug_In)
+[![Version](https://img.shields.io/badge/version-1.5.0-blue.svg)](https://github.com/fabioc-aloha/Alex_Plug_In)
 [![License](https://img.shields.io/badge/license-SEE%20LICENSE-green.svg)](LICENSE.md)
 [![VS Code](https://img.shields.io/badge/VS%20Code-Extension-purple.svg)](https://code.visualstudio.com/)
 [![Marketplace](https://img.shields.io/badge/VS%20Code-Marketplace-007ACC.svg)](https://marketplace.visualstudio.com/items?itemName=fabioc-aloha.alex-cognitive-architecture)
@@ -86,11 +86,11 @@ The extension manages the following structure in your workspace:
 ```
 .github/
   copilot-instructions.md    # Main cognitive framework
-  instructions/              # Procedural memory (10 files)
-  prompts/                   # Episodic memory (11 files)
+  instructions/              # Procedural memory (11 files)
+  prompts/                   # Episodic memory (7 files)
 domain-knowledge/            # Specialized expertise (12 files)
 config/                      # Architecture configuration
-archive/                     # Dream protocol reports
+archive/                     # Dream reports & archived sessions
 ```
 
 ## 🧬 Network Status
@@ -119,11 +119,19 @@ Alex includes automated neural maintenance through the VS Code extension:
 
 Built on 270+ academic sources spanning 150+ years of cognitive science, neuroscience, and AI safety research.
 
-## 🆕 What's New in v1.1.1
+## 🆕 What's New in v1.5.0 UNPENTNILIUM
+
+- **KISS/DRY Architecture Optimization**: Comprehensive code review and simplification
+- **SYNAPSE-SCHEMA.md**: New single source of truth for synapse notation format
+- **Standardized Headers**: All 20+ memory files now use consistent `## Synapses` format
+- **Simplified Activation Patterns**: Verbose patterns reduced to concise trigger → action format
+- **Archive System**: Outdated meditation sessions moved to `archive/meditation-sessions/`
+- **Schema Compliance**: All relationship types now conform to documented standards
+
+### Previous Release (v1.1.1)
 
 - **Publisher Update**: Corrected marketplace publisher to `fabioc-aloha`
 - **Improved Categorization**: Now listed under AI, Machine Learning, and Education
-- **Documentation Updates**: All marketplace links and references updated
 
 ### Previous Release (v1.1.0)
 
