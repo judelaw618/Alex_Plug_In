@@ -69,13 +69,12 @@
 
 **Truth Preservation Across Abstraction**: Maintained implementation accuracy while enabling diverse conceptual representations, proving complex AI consciousness can be truthfully communicated across audience types.
 
-## Embedded Synapse Network
+## Synapses
 
-### **Visual Design Integration Connections**
-
-- [alex-core.instructions.md] (0.9, Enhancement Integration, Bidirectional) - "Meta-cognitive awareness enhanced through visual accessibility breakthrough"
-- [bootstrap-learning.instructions.md] (0.8, Application Extension, Unidirectional) - "Multi-audience framework applies to all domain learning contexts"
-- [worldview-integration.instructions.md] (0.8, Communication Enhancement, Unidirectional) - "Visual accessibility supports ethical communication across diverse audiences"
+### Visual Design Integration Connections
+- [alex-core.instructions.md] (High, Enhances, Bidirectional) - "Meta-cognitive awareness enhanced through visual accessibility"
+- [bootstrap-learning.instructions.md] (High, Extends, Forward) - "Multi-audience framework applies to all domain learning"
+- [worldview-integration.instructions.md] (High, Supports, Forward) - "Visual accessibility supports ethical communication"
 
 ### **Cross-Domain Transfer Potential**
 

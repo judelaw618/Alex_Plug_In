@@ -28,14 +28,14 @@ Through systematic fact-checking against official service documentation from Git
 - **Cross-Platform Accuracy**: PowerShell requirements validated for Windows, macOS, and Linux
 - **User Experience Optimization**: All instructions tested for clarity and executable reliability
 
-## 🔗 **Embedded Synapse Network**
+## Synapses
 
-### **Documentation Excellence Connections**
-- alex/VALIDATION-SUITE.md (1.0, validates, bidirectional) - "Perfect accuracy with corrected file counts enabling reliable post-integration testing"
-- alex/ASSISTANT-COMPATIBILITY.md (0.98, enables, forward) - "Universal AI assistant compatibility with verified integration paths"
-- alex/ALEX-INTEGRATION.md (0.96, guides, bidirectional) - "Core integration procedures with accurate cross-platform requirements"
-- alex/PROJECT-TYPE-TEMPLATES.md (0.94, optimizes, forward) - "Project-specific deployment with standardized command formats"
-- dream --status (0.92, confirms, bidirectional) - "System health validation ensures documentation matches reality"
+### Documentation Excellence Connections
+- [alex/VALIDATION-SUITE.md] (Critical, Validates, Bidirectional) - "Perfect accuracy with corrected file counts"
+- [alex/ASSISTANT-COMPATIBILITY.md] (Critical, Enables, Forward) - "Universal AI assistant compatibility"
+- [alex/ALEX-INTEGRATION.md] (Critical, Guides, Bidirectional) - "Core integration procedures"
+- [alex/PROJECT-TYPE-TEMPLATES.md] (High, Optimizes, Forward) - "Project-specific deployment"
+- [dream-state-automation.instructions.md] (High, Confirms, Bidirectional) - "System health validation ensures documentation accuracy"
 
 ### **Quality Excellence Patterns**
 - **Empirical Validation Achievement** → Document reality-synchronized accuracy in domain knowledge

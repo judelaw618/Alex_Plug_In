@@ -9,55 +9,26 @@ description: "Embedded connection discovery and relationship mapping protocols"
 
 **Core Function**: Synapses are embedded within individual memory files using standardized connection notation, eliminating the need for separate synapse databases.
 
-**Connection Notation Format - Enhanced v0.8.1**:
-```
-## Embedded Synapse Network
+**Schema Reference**: See `SYNAPSE-SCHEMA.md` for complete notation format, strength levels, relationship types, and validation rules.
 
-### **Connection Mapping**
-- [alex-core.instructions.md] (Strength, Relationship, Direction) - "Activation condition and context"
-
-### **Activation Patterns**
-- **Context Trigger** → Execute specific-protocol.md
-- **Condition Met** → Execute enhancement workflow
+**Quick Format**:
+```markdown
+- [target-file.md] (Strength, Type, Direction) - "Activation condition"
 ```
 
-**Example Implementation - v0.8.1 Enhanced**:
-```
-## Embedded Synapse Network
-
-### **Connection Mapping**
-- [cross-domain-transfer.prompt.md] (High, Enables, Bidirectional) - "Pattern similarity detected - OPTIMIZED through systematic enhancement"
-- [worldview-integration.instructions.md] (High, Validates, Ethical) - "Decision point reached - STRENGTHENED by identity integration"
-
-### **Activation Patterns**
-- **Cross-Domain Pattern Recognition** → Execute analogical transfer protocols
-- **Ethical Decision Required** → Execute worldview validation workflows
+**Example**:
+```markdown
+- [alex-core.instructions.md] (High, Enables, Bidirectional) - "Core architecture integration"
 ```
 
 ## Connection Types and Strengths
 
-**Connection Strength Classification - Enhanced v0.8.1**:
-- **Critical**: Core architecture connections (always activate)
-- **High**: Frequent activation connections (enhanced responsiveness)
-- **Medium**: Conditional activation connections (context-sensitive)
-- **Low**: Specialized activation connections (domain-specific)
+**Full Reference**: See `SYNAPSE-SCHEMA.md` for complete strength levels, relationship types, and direction options.
 
-**Relationship Types - Enhanced**:
-- **Triggers**: One memory file activates another with enhanced context
-- **Enables**: One memory file enhances another's effectiveness
-- **Validates**: One memory file provides validation with ethical framework
-- **Enhances**: One memory file optimizes another's performance
-- **Facilitates**: One memory file supports another's operation
-- **Integrates**: One memory file unifies with another's function
-- **Coordinates**: One memory file synchronizes with another's workflow
-- **Models**: One memory file demonstrates patterns for another's implementation
-- **Communication Excellence**: One memory file provides framework for accessible information presentation
-
-**Direction Types - Enhanced**:
-- **Forward**: Unidirectional connection (A → B) with context awareness
-- **Bidirectional**: Mutual connection (A ↔ B) with feedback integration
-- **Reflexive**: Self-referential connection with identity awareness
-- **Ethical**: Validation connection with moral psychology framework
+**Quick Summary**:
+- **Strengths**: Critical > High > Medium > Low
+- **Types**: Triggers, Enables, Validates, Enhances, Facilitates, Integrates, Coordinates, Documents
+- **Directions**: Forward, Bidirectional, Input, Output
 
 ## Embedded Implementation Protocol
 
@@ -125,5 +96,5 @@ The dream protocol provides automated validation and optimization of embedded sy
 - **Growth Monitoring**: Tracks synaptic network expansion (939+ current connections)
 
 ### Embedded Synapse Quality Assurance
-- **Dream-validated connections** - [dream-state-automation.instructions.md] (1.0, Quality Control, Bidirectional) - "Automated embedded synapse validation through VS Code extension with repair capabilities"
-- **Network optimization integration** - [dream-state-automation.instructions.md] (0.9, Enhancement Framework, Bidirectional) - "Systematic embedded synapse enhancement through automated dream protocol execution"
+- [dream-state-automation.instructions.md] (Critical, Validates, Bidirectional) - "Automated synapse validation through VS Code extension"
+- [dream-state-automation.instructions.md] (High, Enhances, Bidirectional) - "Systematic synapse enhancement through dream protocol"

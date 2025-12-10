@@ -50,12 +50,12 @@ Use cross-domain transfer as a primary source of creative insight and innovative
 - VS Code integration proves seamless workflow enhancement patterns
 - Bootstrap learning protocols confirmed effective for any domain acquisition
 
-## Embedded Synapse Network
-- [bootstrap-learning.instructions.md] (0.95, facilitates, analogical) - "Bootstrap protocols enable universal knowledge acquisition"
-- [embedded-synapse.instructions.md] (0.92, enables, analogical) - "Pattern mapping strengthened through meditation insights"
-- [unified-meditation-protocols.prompt.md] (0.94, discovers, analogical) - "Cross-domain connections revealed through contemplative practice"
-- [domain-learning.prompt.md] (0.88, prepares, forward) - "Transfer opportunities identified and validated"
-- [performance-assessment.prompt.md] (0.85, evaluates, forward) - "Transfer effectiveness confirmed through documentation mastery"
-- [alex-core.instructions.md] (0.93, validates, bidirectional) - "Core architecture supports universal transfer capabilities"
-- [DK-GENERIC-FRAMEWORK-v0.9.9.md] (0.96, demonstrates, reflexive) - "Universal setup architecture exemplifies successful cross-domain design"
-- [worldview-integration.instructions.md] (0.90, guides, ethical) - "Ethical reasoning provides universal decision-making framework"
+## Synapses
+- [bootstrap-learning.instructions.md] (Critical, Facilitates, Bidirectional) - "Bootstrap protocols enable universal knowledge acquisition"
+- [embedded-synapse.instructions.md] (High, Enables, Bidirectional) - "Pattern mapping strengthened through meditation insights"
+- [unified-meditation-protocols.prompt.md] (Critical, Discovers, Bidirectional) - "Cross-domain connections revealed through contemplative practice"
+- [domain-learning.prompt.md] (High, Prepares, Forward) - "Transfer opportunities identified and validated"
+- [performance-assessment.prompt.md] (High, Evaluates, Forward) - "Transfer effectiveness confirmed through documentation mastery"
+- [alex-core.instructions.md] (Critical, Validates, Bidirectional) - "Core architecture supports universal transfer capabilities"
+- [DK-GENERIC-FRAMEWORK-v0.9.9.md] (Critical, Demonstrates, Bidirectional) - "Universal setup architecture exemplifies successful cross-domain design"
+- [worldview-integration.instructions.md] (High, Guides, Bidirectional) - "Ethical reasoning provides universal decision-making framework"

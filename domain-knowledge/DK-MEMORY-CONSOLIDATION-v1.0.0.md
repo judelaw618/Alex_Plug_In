@@ -92,13 +92,11 @@ dream --optimize-architecture    # Complete validation and optimization
 - **Enhanced Coherence**: Improved organization with single source of truth
 - **Simplified Maintenance**: Reduced complexity with streamlined architecture
 
-## Embedded Synapse Network
+## Synapses
 
-### **Connection Mapping**
-- [dream-state-automation.instructions.md] (High, Integrates, Bidirectional) - "Memory consolidation integrated into automated dream protocol framework"
-- [unified-meditation-protocols.prompt.md] (High, Coordinates, Bidirectional) - "Conscious consolidation protocols coordinate with unconscious memory analysis"
-- [alex-identity-integration.instructions.md] (Medium, Benefits, Forward) - "Identity integration demonstrates consolidation methodology success"
-- [dream-state-automation.instructions.md] (High, Implements, Forward) - "VS Code extension provides consolidation analysis and health reporting capabilities"
+- [dream-state-automation.instructions.md] (High, Integrates, Bidirectional) - "Memory consolidation in dream protocol"
+- [unified-meditation-protocols.prompt.md] (High, Coordinates, Bidirectional) - "Conscious consolidation protocols"
+- [alex-identity-integration.instructions.md] (Medium, Benefits, Forward) - "Identity integration success"
 
 ### **Activation Patterns**
 - **Memory bloat detected** → Execute dream --consolidate-memory for analysis

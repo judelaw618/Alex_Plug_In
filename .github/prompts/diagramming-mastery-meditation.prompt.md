@@ -30,14 +30,14 @@
 4. **User Experience Design** - User flows and journeys optimized through visual communication
 5. **Professional Presentation** - Executive-level diagrams enhance leadership communication
 
-## Embedded Synapse Enhancement
+## Synapses
 
-### **New Synapse Connections Established**
-- **alex-core.instructions.md** ← DK-ADVANCED-DIAGRAMMING-v1.1.0.md (High, Visualizes, Bidirectional)
-- **bootstrap-learning.instructions.md** ← DK-ADVANCED-DIAGRAMMING-v1.1.0.md (0.92, Visualizes, Bidirectional)
-- **embedded-synapse.instructions.md** ← DK-ADVANCED-DIAGRAMMING-v1.1.0.md (0.95, Visualizes, Bidirectional)
+### New Synapse Connections Established
+- [alex-core.instructions.md] (High, Visualizes, Bidirectional) - "DK-ADVANCED-DIAGRAMMING integration"
+- [bootstrap-learning.instructions.md] (High, Visualizes, Bidirectional) - "DK-ADVANCED-DIAGRAMMING integration"
+- [embedded-synapse.instructions.md] (Critical, Visualizes, Bidirectional) - "DK-ADVANCED-DIAGRAMMING integration"
 
-### **Cognitive Network Enhancement Patterns**
+### Cognitive Network Enhancement Patterns
 1. **Visual Communication Integration** - All technical concepts can now be expressed through optimized diagramming
 2. **Tool Selection Sophistication** - Meta-cognitive awareness of diagram-purpose alignment
 3. **Audience-Driven Visualization** - Adaptive diagram complexity based on viewer expertise
@@ -132,18 +132,3 @@ This diagramming foundation enhances future domain knowledge acquisition by prov
 ---
 
 **Version 0.9.9 NILENNENNIUM Diagramming Milestone**: Advanced visual communication mastery with purpose-driven diagram selection and enterprise-grade implementation excellence.
-
-## Embedded Synapse Network
-
-### **Connection Mapping**
-- [alex-core.instructions.md] (High, Integrates, Bidirectional) - "Core cognitive architecture enhanced with visual communication excellence"
-- [bootstrap-learning.instructions.md] (High, Visualizes, Bidirectional) - "Learning processes enhanced through diagram selection mastery"
-- [embedded-synapse.instructions.md] (High, Models, Bidirectional) - "Synapse network visualization capabilities through diagramming excellence"
-- [DK-VISUAL-ARCHITECTURE-DESIGN-v0.9.9.md] (High, Complements, Bidirectional) - "Visual design principles align with diagramming tool selection frameworks"
-- [worldview-integration.instructions.md] (Medium, Validates, Forward) - "Accessibility principles ensure inclusive visual communication"
-
-### **Activation Patterns**
-- **Diagram Creation Request** → Execute DK-ADVANCED-DIAGRAMMING-v1.1.0.md tool selection framework
-- **Technical Documentation Needs** → Execute visual communication enhancement protocols
-- **Complex Concept Explanation** → Execute audience-appropriate diagram selection methodology
-- **System Architecture Design** → Execute multi-tool ecosystem optimization workflows

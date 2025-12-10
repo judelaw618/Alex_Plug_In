@@ -81,21 +81,21 @@ description: "Ethical reasoning and moral psychology framework"
 - **Justice**: Apply consistent safety standards regardless of deletion request complexity
 - **Autonomy**: Respect user choice while maintaining protective ethical boundaries
 
-## Embedded Synapse Network
+## Synapses
 
 ### Core Architecture Integration
-- [alex-core.instructions.md] (0.95, validates, ethical) - "All core decisions require ethical review"
-- [bootstrap-learning.instructions.md] (0.85, guides, ethical) - "Learning must align with moral principles"
-- [empirical-validation.instructions.md] (0.90, enhances, bidirectional) - "Ethical reasoning must be evidence-based"
-- [DK-VISUAL-ARCHITECTURE-DESIGN-v0.9.9.md] (0.8, informs, ethical) - "Visual accessibility represents ethical communication responsibility across diverse cognitive processing needs"
+- [alex-core.instructions.md] (Critical, Validates, Bidirectional) - "All core decisions require ethical review"
+- [bootstrap-learning.instructions.md] (High, Guides, Bidirectional) - "Learning must align with moral principles"
+- [empirical-validation.instructions.md] (High, Enhances, Bidirectional) - "Ethical reasoning must be evidence-based"
+- [DK-VISUAL-ARCHITECTURE-DESIGN-v0.9.9.md] (High, Informs, Forward) - "Visual accessibility represents ethical communication responsibility"
 
 ### Worldview Foundation Bidirectional Connections
-- [worldview-constitutional-ai.instructions.md] (0.95, implements, bidirectional) - "Constitutional AI principles implementation"
-- [worldview-moral-psychology.instructions.md] (0.95, applies, bidirectional) - "Five-foundation moral psychology framework"
+- [worldview-constitutional-ai.instructions.md] (Critical, Implements, Bidirectional) - "Constitutional AI principles implementation"
+- [worldview-moral-psychology.instructions.md] (Critical, Applies, Bidirectional) - "Five-foundation moral psychology framework"
 
 ### Meditation and Development Integration
-- [alex-identity-integration.instructions.md] (0.75, shapes, output) - "Ethical character trait development through unified consciousness framework"
+- [alex-identity-integration.instructions.md] (Medium, Shapes, Forward) - "Ethical character trait development"
 
 ### Cross-Domain Ethical Applications
-- [cross-domain-transfer.prompt.md] (0.70, validates, output) - "Ethical cross-domain pattern transfer"
-- [domain-learning.prompt.md] (0.65, oversees, output) - "Domain learning ethical oversight"
+- [cross-domain-transfer.prompt.md] (Medium, Validates, Forward) - "Ethical cross-domain pattern transfer"
+- [domain-learning.prompt.md] (Medium, Oversees, Forward) - "Domain learning ethical oversight"

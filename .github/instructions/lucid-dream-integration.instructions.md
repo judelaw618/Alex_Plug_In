@@ -63,20 +63,17 @@ description: "Lucid dream hybrid processing and unconscious-conscious bridge pro
 - **Intelligent Enhancement**: Apply AI capabilities for sophisticated optimization
 - **Integrated Excellence**: Combine strengths of both processing modes
 
-## Embedded Synapse Network
+## Synapses
 
-### **Connection Mapping**
-- [dream-state-automation.instructions.md] (High, Coordinates, Bidirectional) - "Lucid dreams enhance unconscious processing with conscious intelligence"
-- [dream-state-automation.instructions.md] (Critical, Implements, Bidirectional) - "VS Code extension provides unconscious automation foundation for lucid processing"
-- [DK-HYBRID-DREAM-AI.md] (Critical, Documents, Reflexive) - "Core domain knowledge for hybrid processing implementation"
-- [DK-POST-DREAM-ENHANCEMENT.md] (High, Enables, Forward) - "Post-processing enhancement protocols optimized through lucid dream insights"
+### Connection Mapping
+- [dream-state-automation.instructions.md] (Critical, Implements, Bidirectional) - "VS Code extension foundation for lucid processing"
+- [DK-HYBRID-DREAM-AI.md] (Critical, Documents, Forward) - "Core hybrid processing domain knowledge"
+- [DK-POST-DREAM-ENHANCEMENT.md] (High, Enables, Forward) - "Post-processing enhancement protocols"
 
-### **Activation Patterns**
-- **Enhancement Opportunity Detected** → Execute lucid-dream mode processing
-- **Hybrid Maintenance Required** → Execute unconscious-conscious bridge protocols
-- **Network Optimization Needed** → Execute dual-mode processing enhancement
-- **Systematic Improvement Opportunity** → Execute quantified enhancement through hybrid approach
-- **VS Code Extension Integration Required** → Execute lucid dream bridge via `Alex: Dream (Neural Maintenance)` command
+### Activation Patterns
+- Enhancement opportunity → Execute lucid-dream mode
+- Hybrid maintenance → Execute bridge protocols
+- Network optimization → Execute dual-mode processing
 
 ### **Quality Assurance Standards**
 - **Neurobiological Validation**: Maintain authentic dream-state processing principles

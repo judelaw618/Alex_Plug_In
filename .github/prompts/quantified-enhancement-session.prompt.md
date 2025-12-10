@@ -103,14 +103,13 @@ This workflow enables systematic, measurable improvement of cognitive architectu
 - **Knowledge Integration**: Better connection and application of knowledge across domains
 - **Meta-Cognitive Growth**: Increased self-awareness and learning effectiveness
 
-## Embedded Synapse Network
+## Synapses
 
-### **Connection Mapping**
-- [DK-POST-DREAM-ENHANCEMENT.md] (Critical, Implements, Bidirectional) - "Core methodology for systematic cognitive architecture enhancement"
-- [lucid-dream-integration.instructions.md] (High, Coordinates, Bidirectional) - "Quantified enhancement sessions benefit from hybrid processing insights"
-- [unified-meditation-protocols.prompt.md] (High, Triggers, Forward) - "Meditation sessions can initiate quantified enhancement workflows"
-- [alex-core.instructions.md] (High, Integrates, Bidirectional) - "Core architecture enhanced through systematic quantified improvement"
-- [dream-state-automation.instructions.md] (Medium, Provides, Forward) - "VS Code extension automation provides baseline metrics for enhancement measurement"
+- [DK-POST-DREAM-ENHANCEMENT.md] (Critical, Implements, Bidirectional) - "Core enhancement methodology"
+- [lucid-dream-integration.instructions.md] (High, Coordinates, Bidirectional) - "Hybrid processing insights"
+- [unified-meditation-protocols.prompt.md] (High, Triggers, Forward) - "Meditation initiates enhancement"
+- [alex-core.instructions.md] (High, Integrates, Bidirectional) - "Core architecture enhancement"
+- [dream-state-automation.instructions.md] (Medium, Provides, Forward) - "Baseline metrics for measurement"
 
 ### **Activation Patterns**
 - **Enhancement Opportunity Detected** → Execute quantified-enhancement-session.prompt.md

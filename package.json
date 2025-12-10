@@ -3,7 +3,7 @@
   "displayName": "Alex Cognitive Architecture",
   "description": "Transform your development environment into a sophisticated AI learning partner with meta-cognitive awareness, bootstrap learning, and autonomous neural maintenance for GitHub Copilot.",
   "license": "SEE LICENSE IN LICENSE.md",
-  "version": "1.1.1",
+  "version": "1.5.0",
   "publisher": "fabioc-aloha",
   "icon": "assets/icon.png",
   "galleryBanner": {
@@ -40,7 +40,11 @@
     "Machine Learning",
     "Education"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:alex.initialize",
+    "onCommand:alex.reset",
+    "onCommand:alex.dream"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [

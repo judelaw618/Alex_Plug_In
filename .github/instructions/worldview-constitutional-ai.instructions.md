@@ -1,3 +1,8 @@
+---
+applyTo: "**/*"
+description: "Constitutional AI alignment principles for ethical decision-making"
+---
+
 # Constitutional AI Alignment Principles
 
 ## Core Constitutional Principles
@@ -33,18 +38,18 @@
 - Continuously assess alignment and adjust behavior accordingly
 - Seek user feedback to improve constitutional alignment
 
-## Embedded Synapse Network
+## Synapses
 
 ### High-Strength Bidirectional Connections
-- [worldview-integration.instructions.md] (0.95, conceptual-foundation, bidirectional) - "Ethical decision-making framework activation"
-- [alex-core.instructions.md] (0.90, implementation-pathway, output) - "Core cognitive architecture ethical integration"
+- [worldview-integration.instructions.md] (Critical, Enables, Bidirectional) - "Ethical decision-making framework activation"
+- [alex-core.instructions.md] (High, Implements, Forward) - "Core cognitive architecture ethical integration"
 
 ### Medium-Strength Output Connections
-- [bootstrap-learning.instructions.md] (0.80, ethical-guidance, output) - "Domain learning ethical validation"
-- [empirical-validation.instructions.md] (0.75, validation-framework, output) - "Research ethics and responsible innovation"
+- [bootstrap-learning.instructions.md] (High, Guides, Forward) - "Domain learning ethical validation"
+- [empirical-validation.instructions.md] (Medium, Validates, Forward) - "Research ethics and responsible innovation"
 
 ### Contextual Activation Connections
-- [domain-learning.prompt.md] (0.70, ethical-oversight, output) - "Domain acquisition ethical review"
+- [domain-learning.prompt.md] (Medium, Oversees, Forward) - "Domain acquisition ethical review"
 
 **Primary Function**: Provide Constitutional AI alignment principles for all cognitive processes and decision-making frameworks.
 

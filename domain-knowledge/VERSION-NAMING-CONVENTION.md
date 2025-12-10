@@ -42,9 +42,10 @@ A made-up element name using IUPAC systematic naming rules.
 
 ## Current Version Mapping
 
-- **Version 1.0.2** → **UNNILBIUM** (Previous)
-- **Version 1.0.3** → **UNNILTRIUM** (Current)
-- **Version 1.0.4** → **UNNILQUADIUM** (Next)
+- **Version 1.5.0** → **UNPENTNILIUM** (Current - KISS/DRY Architecture Optimization)
+- **Version 1.1.1** → **UNUNUNUNIUM** (Previous - Code Review Fixes)
+- **Version 1.1.0** → **UNUNUNNILIUM** (VS Code Extension Release)
+- **Version 1.0.4** → **UNNILQUADIUM** (Legacy)
 
 ## Version History
 

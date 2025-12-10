@@ -81,12 +81,12 @@ Successfully transformed Alex-specific dream protocols into a **generic, configu
 - **Maintenance Automation**: Universal dream protocols adaptable to any architecture
 - **Documentation Completeness**: 269 lines covering all implementation requirements
 
-## 🔗 **Embedded Synapse Network Enhancement**
+## Synapses
 
-### **New Universal Framework Connections**
-- **VS Code Extension Integration** - [dream-state-automation.instructions.md] (1.0, Framework Foundation, Bidirectional) - "VS Code extension enabling universal cognitive architecture deployment through integrated command palette"
-- **Template Deployment Protocol** - [config/cognitive-config-template.json] (0.9, Universal Platform, Unidirectional) - "Generic template system for cognitive architecture metadata and path configuration"
-- **Alex Reference Implementation** - [config/cognitive-config.json] (1.0, Sophisticated Example, Bidirectional) - "Alex cognitive architecture configuration with specializations and memory file paths"
+### New Universal Framework Connections
+- [dream-state-automation.instructions.md] (Critical, Implements, Bidirectional) - "VS Code extension enabling universal cognitive architecture deployment"
+- [config/cognitive-config-template.json] (High, Templates, Forward) - "Generic template system for cognitive architecture configuration"
+- [config/cognitive-config.json] (Critical, References, Bidirectional) - "Alex cognitive architecture configuration as reference implementation"
 
 ### **Cross-Domain Integration Points**
 - **Professional Spawning Compatibility**: Universal framework enhances professional Alex deployment through template system

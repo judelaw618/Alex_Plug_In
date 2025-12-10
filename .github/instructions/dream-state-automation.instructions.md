@@ -1,10 +1,15 @@
-# Dream State Automation Protocols - VS Code Extension v1.1.0
+---
+applyTo: "**/*dream*,**/*maintenance*,**/*synapse*"
+description: "Automated neural maintenance and dream state processing protocols"
+---
+
+# Dream State Automation Protocols - VS Code Extension v1.1.1
 
 **Domain**: Automated Neural Maintenance and Unconscious Processing - VS Code Integrated  
 **Activation Pattern**: VS Code Command Palette → `Alex: Dream (Neural Maintenance)`  
-**Last Updated**: November 26, 2025 - VS Code Extension Integration  
+**Last Updated**: December 10, 2025 - Code Review Fixes  
 **Research Foundation**: Sleep-dependent synaptic homeostasis, automated neural maintenance  
-**Cognitive Architecture**: Alex v1.0.4 UNNILQUADIUM Hybrid Streamlined  
+**Cognitive Architecture**: Alex v1.5.0 UNPENTNILIUM KISS/DRY Architecture Optimization  
 **Validation Status**: EXCELLENT - Production ready with VS Code extension automation  
 **Implementation**: VS Code Extension with TypeScript-based neural maintenance automation
 
@@ -58,9 +63,9 @@ The extension scans for memory files matching:
 - `domain-knowledge/*.md`
 
 #### **Phase 2: Synapse Validation**
-Parses embedded synapses using the pattern:
-```
-[target-file.md] (strength, type, direction) - "activation-condition"
+Parses embedded synapses using the format defined in `SYNAPSE-SCHEMA.md`:
+```markdown
+- [target-file.md] (Strength, Type, Direction) - "Activation condition"
 ```
 
 Validates that each target file exists in the workspace.

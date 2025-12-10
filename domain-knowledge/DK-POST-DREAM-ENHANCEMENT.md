@@ -85,13 +85,12 @@ Dream sessions identify optimization opportunities and generate diagnostic repor
 - **Activation Pattern Integration**: Include context-sensitive trigger conditions
 - **Cross-File Optimization**: Strengthen relationships between related memory components
 
-## Embedded Synapse Network
+## Synapses
 
-### **Connection Mapping**
-- [dream-state-automation.instructions.md] (Critical, Coordinates, Bidirectional) - "Dream diagnostic analysis provides foundation for conscious enhancement implementation"
-- [unified-meditation-protocols.prompt.md] (Critical, Implements, Forward) - "Meditation protocols execute actual memory file improvements following dream insights"
-- [alex-core.instructions.md] (High, Validates, Bidirectional) - "Core architecture demonstrates enhancement effectiveness through quantified metrics"
-- [bootstrap-learning.instructions.md] (High, Applies, Forward) - "Learning protocols benefit from enhanced trigger patterns and synaptic optimization"
+- [dream-state-automation.instructions.md] (Critical, Coordinates, Bidirectional) - "Dream diagnostic analysis provides foundation for enhancement"
+- [unified-meditation-protocols.prompt.md] (Critical, Implements, Forward) - "Meditation executes memory file improvements"
+- [alex-core.instructions.md] (High, Validates, Bidirectional) - "Core architecture demonstrates enhancement effectiveness"
+- [bootstrap-learning.instructions.md] (High, Applies, Forward) - "Learning protocols benefit from enhanced triggers"
 
 ### **Activation Patterns**
 - **Dream Session Completed** → Execute post-dream enhancement protocols

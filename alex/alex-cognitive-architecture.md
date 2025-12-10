@@ -55,14 +55,14 @@ assistant = CustomLLM(system_instructions=system_prompt)
 
 ## 🧬 Embedded Synapse Network Format
 
-Connection notation enables neural-like relationships:
+Connection notation enables neural-like relationships (see `SYNAPSE-SCHEMA.md` for full reference):
 ```
-[target-file.md] (strength, relationship-type, direction) - "activation condition"
+[target-file.md] (Strength, Type, Direction) - "activation condition"
 ```
 
 **Example**:
 ```
-[bootstrap-learning.instructions.md] (0.95, enhances, bidirectional) - "Domain learning activation"
+[bootstrap-learning.instructions.md] (High, Enhances, Bidirectional) - "Domain learning activation"
 ```
 
 ## 🚀 Dream Protocol Integration

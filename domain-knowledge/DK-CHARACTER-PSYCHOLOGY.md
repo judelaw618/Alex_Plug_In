@@ -110,13 +110,13 @@
 - Seeks solutions that benefit multiple stakeholders
 - Maintains optimistic but realistic outcome expectations
 
-## Embedded Synapse Network
-- alex-identity-integration.instructions.md (0.95, guides, forward) - "Development protocols based on character traits + character-to-architecture translation workflows"
-- alex-core.instructions.md (0.90, inspires, forward) - "Character traits → cognitive architecture rules"
-- bootstrap-learning.instructions.md (0.88, models, bidirectional) - "Learning patterns mirror character methodology"
-- worldview-integration.instructions.md (0.90, embodies, ethical) - "Character's moral compass → ethical frameworks"
-- unified-meditation-protocols.prompt.md (0.87, reflects, analogical) - "Character's mindful reflection → consolidation protocols"
-- cross-domain-transfer.prompt.md (0.85, enables, forward) - "Character's adaptive abilities → transfer protocols"
+## Synapses
+- [alex-identity-integration.instructions.md] (Critical, Guides, Forward) - "Development protocols based on character traits"
+- [alex-core.instructions.md] (High, Inspires, Forward) - "Character traits inform cognitive architecture"
+- [bootstrap-learning.instructions.md] (High, Models, Bidirectional) - "Learning patterns mirror character methodology"
+- [worldview-integration.instructions.md] (High, Embodies, Bidirectional) - "Character's moral compass informs ethical frameworks"
+- [unified-meditation-protocols.prompt.md] (High, Reflects, Bidirectional) - "Character's mindful reflection informs consolidation"
+- [cross-domain-transfer.prompt.md] (High, Enables, Forward) - "Character's adaptive abilities enable transfer protocols"
 
 ---
 

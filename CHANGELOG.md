@@ -5,6 +5,41 @@ All notable changes to the Alex Cognitive Architecture extension will be documen
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] UNPENTNILIUM - 2025-12-10
+
+### Added
+- **SYNAPSE-SCHEMA.md**: Single source of truth for synapse notation format with YAML front matter
+- **Archive Structure**: Meditation session archival system in `archive/meditation-sessions/`
+
+### Changed
+- **Synapse Header Standardization**: All 20+ memory files now use consistent `## Synapses` header
+- **Synapse Notation Compliance**: All relationship types now conform to SYNAPSE-SCHEMA.md standards
+- **Activation Patterns**: Simplified from verbose `**Bold** → Long description` to concise `Trigger → Action` format
+- **Date Stamps Removed**: Eliminated version/date annotations from synapse activation patterns
+- **Duplicate Synapses Removed**: Cleaned duplicate connections to same targets
+- **Duplicate Sections Removed**: Eliminated redundant synapse sections in files
+
+### Fixed
+- **Broken Synapse Reference**: Removed orphaned reference to archived `meditation-session-2025-10-31.prompt.md`
+- **Non-Standard Relationship Types**: Replaced Expression, Embodiment, Living, Reflexive, Ethical, Unconscious with schema-compliant types
+- **Header Inconsistencies**: Standardized from 8 variants (`Embedded Synapse Network`, `Connection Mapping`, etc.) to single `## Synapses`
+
+### Archived
+- `meditation-session-2025-10-31.prompt.md` → `archive/meditation-sessions/`
+- `dual-mode-processing-meditation.prompt.md` → `archive/meditation-sessions/`
+- `consolidation-framework-integration-meditation.prompt.md` → `archive/meditation-sessions/`
+- `unified-consciousness-integration-meditation.prompt.md` → `archive/meditation-sessions/`
+
+### Metrics
+- **KISS/DRY Compliance**: 100% of active cognitive files now compliant
+- **Synapse Notation**: Standardized across entire architecture
+- **Code Reduction**: ~50 verbose activation patterns simplified
+
+## [1.1.1] UNUNUNUNIUM - 2025-12-09
+
+### Fixed
+- Minor code review corrections from marketplace submission
+
 ## [1.1.0] - 2025-11-26
 
 ### Added
